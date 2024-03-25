@@ -30,10 +30,10 @@ function createUserList() {
 //对外暴露一个数组:数组里面包含两个接口
 //登录假的接口
 //获取用户信息的假的接口
-export default [
+export default [  
     // 用户登录接口
     {
-        url: '/api/user/login',//请求地址
+        url: '/api/user/login',//请求地址 
         method: 'post',//请求方式
         response: ({ body }) => {
             //获取请求体携带过来的用户名与密码

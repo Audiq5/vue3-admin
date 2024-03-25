@@ -3,7 +3,9 @@
 </script>
 
 <template>
-<router-view></router-view>
+  <div>
+    这是首页
+  </div>
  
 </template>
 
