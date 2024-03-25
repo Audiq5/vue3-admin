@@ -48,7 +48,7 @@
 
   const ruleFormRef = ref<FormInstance>();
 
-  const validatePass = (rule: any, value: any, callback: any) => {
+  const validatePass = (value: any, callback: any) => {
     if (value === "") {
       callback(new Error("请输入您的密码"));
     } else {
@@ -59,7 +59,7 @@
       callback();
     }
   };
-  const username = (rule: any, value: any, callback: any) => {
+  const username = (value: any, callback: any) => {
     if (value === "") {
       callback(new Error("请输入您的账号"));
     } else {
@@ -87,10 +87,10 @@
     });
   };
 
-  const resetForm = (formEl: FormInstance | undefined) => {
-    if (!formEl) return;
-    formEl.resetFields();
-  };
+  // const resetForm = (formEl: FormInstance | undefined) => {
+  //   if (!formEl) return;
+  //   formEl.resetFields();
+  // };
 </script>
 <style scoped lang="scss">
   .login_container {
