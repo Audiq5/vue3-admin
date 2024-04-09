@@ -1,14 +1,7 @@
-<script setup lang="ts">
- 
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div>
-    这是首页
-  </div>
- 
+  <div>这是首页</div>
 </template>
 
-<style scoped>
- 
-</style>
+<style scoped></style>

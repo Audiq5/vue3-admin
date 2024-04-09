@@ -9,6 +9,19 @@ import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
 import gloablComponent from './components/index';
 import './styles/index.scss'
 import router from './router'
+import pinia from "@/store/index";
+
+// import axios from 'axios'
+// axios({
+//   url: '/api/user/login',
+//   method: 'post',
+//   data: {
+//     username: 'admin',
+//     password: '1111211'
+//   }
+// })
+
+
 //获取应用实例对象
 const app = createApp(App)
 //安装element-plus插件
@@ -17,6 +30,8 @@ app.use(ElementPlus, {
 })
 //注册router
 app.use(router)
+//安装pinia
+app.use(pinia)
 
 //安装自定义插件
 app.use(gloablComponent);
